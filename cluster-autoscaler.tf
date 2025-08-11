@@ -54,7 +54,7 @@ resource "helm_release" "cluster-autoscaler" {
       name  = "rbac.serviceAccount.annotations.eks\\.amazonaws\\.com/role-arn"
       value = module.cluster_autoscaler_irsa.iam_role_arn
     },
-     #Fine-tune auto scaling
+    #Fine-tune auto scaling
     {
       name  = "extraArgs.scale-down-unneeded-time"
       value = "2m"
