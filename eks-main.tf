@@ -145,4 +145,5 @@ module "eks" {
     environment = "development"
     application = "${var.project_name}"
   }
+  
 }
